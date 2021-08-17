@@ -1,0 +1,51 @@
+#landingVideo{
+    max-width: 100%;
+}
+
+#videoArea{
+    position: relative;
+    float:left;
+}
+
+#videoArea:before{
+    content: "";
+    display: block;
+    position: absolute;
+    height: 99.5%;
+    width: 100%;
+    background: #524438;
+    opacity: 50%;
+}
+
+#videoAreaContent{
+    position:absolute;
+    width: 100%;
+    float:left;
+    z-index:300000;
+}
+
+#peopleSaySnippet{
+    padding-top: 15rem;
+}
+
+@media (min-width: 400px){
+    #peopleSaySnippet{
+        padding-top: 16rem;
+    }
+}
+
+@media (min-width: 992px){
+    #requestButton{
+        margin-left: 52vw;
+    }
+
+    #peopleSaySnippet{
+        padding-top: 50rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    #requestButton{
+        margin-left: 60vw;
+    }
+}
