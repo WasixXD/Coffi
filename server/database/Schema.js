@@ -1,25 +1,29 @@
 const mongoose = require('mongoose')
-const { v4 } = require('uuid')
+
 const Joi = require('joi')
 
 
 let Order = new mongoose.Schema({
     id:{
-        type: String,
-        default: v4()
+        type: String
+        
     },
     author: String,
     email: String,
     item: String,
     to: String,
     sub: String,
+    status: {
+        type: Boolean,
+        default: false
+    }
 })
 
 
 
 const joiValidate = (obj) => {
     var schema = Joi.object({
-        id: Joi.string().max(37).default(v4()),
+        id: Joi.string().max(37),
         author: Joi.string().required().alphanum(),
         email: Joi.string().required().email(),
         item: Joi.string().min(5).max(40).required(),

@@ -1,8 +1,9 @@
 const { Model, validation } = require('./Schema')
 
+//criar um pedido
 async function create(obj) {
     try {
-
+        
         const validate = validation(obj)
         if(validate.error) {
             return validate
@@ -15,8 +16,29 @@ async function create(obj) {
     }
 }
 
+//pegar por id especifico
+async function getById(id) {
+    try {
+        const result = await Model.find({id: id})
+        return result
+    } catch(error) {
+        return error
+    }
 
+}
 
-module.exports ={
-    create
+//pegar por todos
+async function getAll() {
+    try {
+        const result = await Model.find().exec()
+        return result
+    } catch(error) {
+        return error
+    }
+}
+
+module.exports = {
+    create,
+    getById,
+    getAll
 }
