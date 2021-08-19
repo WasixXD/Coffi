@@ -18,32 +18,31 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
         <!-- Custom -->
-        <link rel="stylesheet" href="coffi.css">
-        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="style/coffi.css">
+        <link rel="stylesheet" href="style/main.css">
+        <link rel="stylesheet" href="style/index.css">
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow">
-            <div class="container-fluid shadow">
-                <a class="navbar-brand" href="#"><img src="Coffi Logo PNG.png" alt="Coffi Logo" style="max-height: 3rem;"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#coffiNav" aria-controls="coffiNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-        
-                <div class="collapse navbar-collapse" id="coffiNav">
-                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="./">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#aboutUs">About Us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#peopleSay">People Say</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/menu">Menu</a>
-                        </li>
-                    <button class="btn btn-outline-dark text-light" id="requestButton"><a href="/request">Request</a> </button>
+        <nav class="navbar">
+            <div class="container">
+          
+                <div class="navbar-header">
+                    <button class="navbar-toggler" data-toggle="open-navbar1">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <a href="#"><img src="media/Coffi Logo PNG.png" alt="Coffi Logo" style="max-height: 3rem; margin-top: .4rem;"></a>
+                </div>
+          
+                <div class="navbar-menu" id="open-navbar1">
+                    <ul class="navbar-nav">
+                        <li class="active"><a href="./">Home</a></li>
+                        <li><a href="#aboutUs">About Us</a></li>
+                        <li><a href="#peopleSay">People Say</a></li>
+                        <li><a href="/menu">Menu</a></li>
+                        <li><a href="/request" class="btn btn-light" id="request">Request</a></li>
+                    </ul>
                 </div>
             </div>
         </nav>
@@ -51,64 +50,79 @@
         <div id="videoWrapper">
             <div id="videoArea">
                 <video autoplay muted loop id="landingVideo">
-                    <source src="Hot Coffee.mp4" type="video/mp4">
+                    <source src="media/Hot Coffee.mp4" type="video/mp4">
                     Your browser does not support HTML5 video.
                 </video>
             </div>
 
             <div id="videoAreaContent">
-                <img src="Coffi Logo PNG.png" style="max-width: 40vw; margin-left: 30vw; margin-top: 4rem;" alt="">
-                <h3 class="text-center text-light mt-3">One sip, One kill.</h3>
+                <img src="media/Coffi Logo PNG.png" style="max-width: 40vw; margin-left: 30vw; margin-top: 4rem;" alt="">
+                <h3 class="text-center text-light mt-3 fw-light">One sip, One kill.</h3>
             </div>
         </div>
 
         <!-- People Say Snippet -->
         <div id="peopleSaySnippet" class="bg-primary text-light">
             <div class="container">
-                <h2 class="text-center" id="peopleSay">What people have to say about our job?</h2>
+                <div class="container text-center">
+                    <h2 class="fw-bold" id="peopleSay">What people have to say about our job?</h2>
+                </div>
 
-                <div class="card mb-3 mt-5 mx-3 text-dark">
-                    <div class="row g-0 p-4">
-                        <div class="col-md-3">
-                            <img src="https://i.redd.it/95l1xuxnxjy51.png" style="max-height: 12rem;" class="img-fluid rounded-circle">
+                <div class="row">
+                    <div class="col-sm mt-4">
+                        <div class="custom-card">
+                            <img class="user-avatar" src="https://www.kindpng.com/picc/m/21-214439_free-high-quality-person-icon-default-profile-picture.png" alt="">
+                            <h2 class="user-name text-dark">Anonymous Customer</h2>
+                            <p class="user-opinion text-dark">"My friend used to love a good coffee... a hot and sweet coffee, so i brought him one from Coffi and now he... well... you know. But he didn't suffered at all! :D"
+                            </p>
                         </div>
-                        <div class="col-md-8">
-                            <div class="card-body">
-                                <p class="card-text">
-                                    <figure>
-                                        <blockquote class="blockquote">
-                                            <p>"Opinião do cliente."</p>
-                                        </blockquote>
-                                        <figcaption class="blockquote-footer">
-                                            <cite title="Source Title">Nome do cliente.</cite>
-                                        </figcaption>
-                                    </figure>
-                                </p>
-                            </div>
+                    </div>
+                    <div class="col-sm mt-4">
+                        <div class="custom-card">
+                            <img class="user-avatar" src="https://www.kindpng.com/picc/m/21-214439_free-high-quality-person-icon-default-profile-picture.png" alt="">
+                            <h2 class="user-name text-dark">Anonymous Customer</h2>
+                            <p class="user-opinion text-dark">"I was already tired of my boyfriend, he was the coffee-type of person, now he is more to death-type person. Thanks Coffi, finally got rid of him."
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,128L60,149.3C120,171,240,213,360,197.3C480,181,600,107,720,112C840,117,960,203,1080,208C1200,213,1320,139,1380,101.3L1440,64L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 310"><path fill="#fff" fill-opacity="1" d="M0,128L60,149.3C120,171,240,213,360,197.3C480,181,600,107,720,112C840,117,960,203,1080,208C1200,213,1320,139,1380,101.3L1440,64L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
         </div>
 
-        <div class="container">
-            <div class="aboutUsSnippet" id="aboutUs">
-                <h2 class="text-center mt-5">And what do we do?</h2>
-
-                <div class="card mb-3 mt-5 bg-primary text-light">
-                    <div class="row g-0 p-4">
-                        <div class="col-md">
-                            <div class="card-body">
-                                <p class="card-text">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vitae congue ex. Maecenas dignissim, felis eget aliquam maximus, lacus mauris vulputate purus, vitae dapibus felis sem a augue. Nulla facilisis, tortor sit amet molestie ornare, metus velit rhoncus velit, at suscipit ligula tellus ut felis. Nulla erat diam, aliquam id tempus vel, hendrerit a orci. In rutrum lacinia consequat. Aenean varius, eros a condimentum suscipit, orci velit sagittis massa, at pretium nibh enim in dui. Etiam ornare venenatis odio, quis congue nunc faucibus vel. Phasellus suscipit tortor vel arcu dignissim imperdiet. 
-                                </p>
+        <div class="container border-none">
+            <div class="aboutUsSnippet text-center" id="aboutUs">
+                <div class="container px-4 py-5" id="featured-3">
+                    <h2 class="pb-2 fw-bold">And what do we do?</h2>
+                    <p class="lead">We work with confidence and loyalty (and also with a cool stealth style)</p>
+                    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+                        <div class="feature col">
+                            <div class="feature-icon">
+                                <i class="bi bi-emoji-dizzy" style="font-size: 3.5rem"></i>
                             </div>
+                            <h2>Quick Death</h2>
+                            <p>We value for quick and painless work.</p>
+                        </div>
+                        <div class="feature col">
+                            <div class="feature-icon">
+                                <i class="bi bi-shield-lock" style="font-size: 3.5rem"></i>
+                            </div>
+                            <h2>Anonymous</h2>
+                            <p>You don't need to create an account.</p>
+                        </div>
+                        <div class="feature col">
+                            <div class="feature-icon">
+                                <i class="bi bi-cup" style="font-size: 3.5rem"></i>
+                            </div>
+                            <h2>Warm</h2>
+                            <p>We guarantee that the victim will have a good last cup of coffee.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
+        <script src="scripts/main.js"></script>
     </body>
 </html>

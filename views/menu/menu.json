@@ -10,7 +10,7 @@
             "1 tablespoon of special ingredient"
         ],
         "desc": "A good cup of macchiato is sufficient to warm the customer's heart, Fatal for lactose intolerants.",
-        "imgURl": "google.com"
+        "imgURL": "google.com"
     },{
         "id": 2,
         "nome": "Espresso",
