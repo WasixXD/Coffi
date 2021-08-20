@@ -4,11 +4,81 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Coffi | Request</title>
+    
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    
+    <!-- Vue.js -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    
+    <!-- Custom -->
+    <link rel="stylesheet" href="style/coffi.css">
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/request.css">
 </head>
-<body>
-    Request
+<body class="bg-req">
+    <nav class="navbar">
+        <div class="container">
+            
+            <div class="navbar-header">
+                <button class="navbar-toggler" data-toggle="open-navbar1">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <a href="#"><img src="media/Coffi Logo PNG.png" alt="Coffi Logo" style="max-height: 3rem; margin-top: .4rem;"></a>
+            </div>
+            
+            <div class="navbar-menu" id="open-navbar1">
+                <ul class="navbar-nav">
+                    <li><a href="./">Home</a></li>
+                    <li><a href="#aboutUs">About Us</a></li>
+                    <li><a href="#peopleSay">People Say</a></li>
+                    <li><a href="/menu">Menu</a></li>
+                    <li class="active"><a href="/request" class="btn btn-light" id="request">Request</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <form class="container mt-3 mt-md-5 text-light fw-bold" method="POST" action="/order">
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-6">
+                <div class="mb-4 mb-md-5">
+                    <label for="inputName" class="form-label">Name</label>
+                    <input name="name" type="text" class="form-control rounded-0" id="inputName" aria-describedby="nameHelp">
+                </div>
+                <div class="mb-4 mb-md-5">
+                    <label for="inputItem" class="form-label">Item</label>
+                    <input name="item" type="text" class="form-control rounded-0" id="inputItem">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="mb-4 mb-md-5">
+                    <label for="inputEmail" class="form-label">Email</label>
+                    <input name="email" type="email" class="form-control rounded-0" id="inputEmail" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-4 mb-md-5">
+                    <label for="inputTo" class="form-label">To</label>
+                    <input name="to" type="text" class="form-control rounded-0" id="inputTo">
+                </div>
+            </div>
+            <h6 class="fs-925">Subtitle</h6>
+            <div class="form-floating">
+                <textarea name="subtitle" class="form-control rounded-0" placeholder="Leave a comment here" id="floatingTextarea" style="height: 150px"></textarea>
+            </div>
+            <button class="btn btn-submit mt-4 mt-md-5 mb-4 w-75 rounded-0" type="submit">ORDER</button>
+        </div>
+    </form>
+    
     <!-- Aqui é a area do form, usar method POST e jogar as coisas no /order -->
-    <!-- Pro banco conseguir validar e aceitar o POST tem que ter os seguintes valores:  author, email, item, to, sub, id -->
+    <!-- Pro banco conseguir validar e aceitar o POST tem que ter os seguintes valores:  author, email, item, to, sub -->
+    <script src="scripts/main.js"></script>
 </body>
 </html>

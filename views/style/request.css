@@ -1,0 +1,19 @@
+.fw-bold{
+    font-weight: 500 !important;
+}
+
+.form-req{
+    max-width: 450px;
+}
+
+.bg-req{
+    background-color: #524438;
+}
+
+.btn-submit{
+    background-color: #ffffff;
+}
+
+.fs-925{
+    font-size: 0.925rem;
+}
