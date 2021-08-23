@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Coffi | admin</title>
+    </head>
+    <body>
+        
+
+
+        <!-- <script>
+            //"Segurança da página"
+            window.addEventListener("load", () => {
+                let senha = prompt("Senha")
+                if(senha != "secure_password") {
+                    alert("Incorrect password")
+                    location.reload()
+                }
+            })
+        </script> -->
+        <script>
+            window.addEventListener("load", async () => {
+                const URL = "http://localhost:5000/order/all"
+                let response = await fetch(URL)
+                
+                //array com os resultados
+                let result = await response.json()
+
+                result.forEach(order => {
+                    document.body.innerHTML += `${order.author} = ${order.status} <button class="enviar" id="${order.id}"">enviar</button><br>`
+                })
+                
+                let buttons = document.querySelectorAll(".enviar")
+                
+                buttons.forEach(button => {
+                    button.addEventListener("click",async () => {
+                        
+                       
+                        let options = {
+                            method: "PUT", 
+                            headers: {
+                                'Content-type': 'application/x-www-form-urlencoded; charset=UTF-8'
+                                }
+                            
+                        }
+                        console.log(button.id)
+                        let response = await fetch("http://localhost:5000/order/upd/" + button.id, options)
+                        let result= await response.json()
+
+                        let send = await fetch("http://localhost:5000/email/" + button.id)
+                        let dale = await send.json()
+
+                        body.innerHTML += dale
+                        
+                    })
+                })
+            })
+
+
+        </script>
+    </body>
+</html>

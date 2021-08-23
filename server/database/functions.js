@@ -37,8 +37,20 @@ async function getAll() {
     }
 }
 
+
+async function updateById(id) {
+    try {
+        
+        const result = await Model.updateOne({id}, {status: !this.status})
+        return result
+    } catch(err) {
+        return err
+    }
+}
+
 module.exports = {
     create,
     getById,
-    getAll
+    getAll,
+    updateById
 }

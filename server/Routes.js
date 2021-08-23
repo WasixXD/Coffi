@@ -14,6 +14,10 @@ router.get("/", (req, res) => {
 })
 
 
+router.get("/admin", (req, res) => {
+    res.status(200).sendFile(path.resolve("views/admin.html"))
+})
+
 router.get("/menu", (req, res) => {
     res.status(200).sendFile(path.resolve("views/menu.html"))
 })
