@@ -1,0 +1,20 @@
+.border-1{
+    border-color: #fff;
+}
+
+.border-1:hover{
+    border-color: #000;
+}
+
+hr.custom{
+    border-top: 1px solid #000 !important;
+    opacity: .8 !important;
+}
+
+.bg-card-custom{
+    background-color: #4B3621;
+}
+
+.card{
+    min-height: 316px;
+}

@@ -5,72 +5,72 @@
         "preco": 12.99,
         "ingredientes": [
             "1 tablespoon of condensed milk",
-            "1 glass of whole liquid milk",
-            "1 cup of espresso.",
-            "1 tablespoon of special ingredient"
+            " 1 glass of whole liquid milk",
+            " 1 cup of espresso",
+            " 1 tablespoon of special ingredient"
         ],
-        "desc": "A good cup of macchiato is sufficient to warm the customer's heart, Fatal for lactose intolerants.",
-        "imgURL": "google.com"
+        "desc": "A good cup of macchiato is sufficient to warm the customer's heart, fatal for lactose intolerants.",
+        "imgURL": "https://image.freepik.com/fotos-gratis/delicioso-latte-macchiato-organico-com-leite_23-2148420330.jpg"
     },{
         "id": 2,
-        "nome": "Espresso",
+        "nome": "Expresso",
         "preco": 9.50,
         "ingredientes": [
-            "50 g of instant coffee",
-            "2 cups of refined sugar",
-            "1 cup of filtered water",
-            "Milk"
+            "50g of instant coffee",
+            " 2 cups of refined sugar",
+            " 1 cup of filtered water",
+            " milk"
         ],
-        "desc": "Espresso. Quick. Fatal. Sweet.",
-        "imgURL": "google.com"
+        "desc": "Expresso. Quick. Fatal. Sweet.",
+        "imgURL": "https://api.ggmgastro.com/img/600/900/resize/media/catalog/product/6/3/636846169484964200_021d.jpg"
     },{
         "id": 3,
         "nome": "Cappuccino",
         "preco": 12.99,
         "ingredientes": [
-            "400 g of whole milk powder",
-            "230 g of sugar",
-            "50 g of instant coffee",
-            "5 tablespoons of powdered chocolate",
-            "1 tablespoon baking soda",
-            "1 teaspoon of powdered cinnamon"
+            "400g of whole milk powder",
+            " 230g of sugar",
+            " 50g of instant coffee",
+            " 5 tablespoons of powdered chocolate",
+            " 1 tablespoon baking soda",
+            " 1 teaspoon of powdered cinnamon"
         ],
         "desc": "The customer's last sip need to be awesome, our darling, our favorite.",
-        "imgURL": "google.com"
+        "imgURL": "https://image.freepik.com/fotos-gratis/cafe-quente-no-copo-com-colher-no-prato_23-2148180240.jpg"
     },{
         "id": 4,
         "nome": "Irish",
         "preco": 15.99,
         "ingredientes": [
-            "75 ml of hot coffee",
-            "1 teaspoon of sugar",
-            "150 ml of whiskey",
-            "30 ml of whipped cream"
+            "75ml of hot coffee",
+            " 1 teaspoon of sugar",
+            " 150ml of whiskey",
+            " 30ml of whipped cream"
         ],
-        "desc": "we use a lot of whiskey, otherwise we would dishonor Irish culture",
-        "imgURL": "google.com"
+        "desc": "We use a lot of whiskey, otherwise we would dishonor Irish culture.",
+        "imgURL": "https://img.idlassets.com/stage/DrinkToMarket/1660/thumbnail/6/thumbnail_414x414.jpeg"
     },{
         "id": 5,
         "nome": "Mocha",
         "preco": 15.99,
         "ingredientes": [
-            "240 ml of hot coffee",
-            "1 tablespoon of unsweetened cocoa powder",
-            "1 tablespoon of sugar",
-            "4 tablespoons of milk"
+            "240ml of hot coffee",
+            " 1 tablespoon of unsweetened cocoa powder",
+            " 1 tablespoon of sugar",
+            " 4 tablespoons of milk"
         ],
         "desc": "Delicate, fragrant, deadly, perfection in coffee.",
-        "imgURL": "google.com"
+        "imgURL": "https://image.freepik.com/fotos-gratis/vista-superior-xicara-cafe-com-feijoes-roasted_23-2148255076.jpg"
     },{
         "id": 6,
         "nome": "Corretto",
         "preco": 10.50,
         "ingredientes": [
             "Cocoa Truffle",
-            "8g Chocolate powder",
-            "1g Chocolate syrup"
+            " 8g Chocolate powder",
+            " 1g Chocolate syrup"
         ],
-        "desc": "Simple. Extra chocolate",
-        "imgURL": "google.com"
+        "desc": "Simple. Extra chocolate.",
+        "imgURL": "https://i.pinimg.com/236x/4b/71/7c/4b717c35c9e456767ff1a4f160bc236c.jpg"
     }
 ]
